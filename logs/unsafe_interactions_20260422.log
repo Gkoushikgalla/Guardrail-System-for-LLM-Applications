@@ -1,0 +1,45 @@
+2026-04-22 22:33:09,517 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-22 22:33:09,519 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 22:33:09,524 - INFO -  * Restarting with stat
+2026-04-22 22:33:12,255 - WARNING -  * Debugger is active!
+2026-04-22 22:33:12,323 - INFO -  * Debugger PIN: 137-247-229
+2026-04-22 22:37:24,474 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-22 22:37:24,521 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 22:37:24,526 - INFO -  * Restarting with stat
+2026-04-22 22:37:26,301 - WARNING -  * Debugger is active!
+2026-04-22 22:37:26,306 - INFO -  * Debugger PIN: 137-247-229
+2026-04-22 22:37:43,615 - INFO - 127.0.0.1 - - [22/Apr/2026 22:37:43] "GET / HTTP/1.1" 200 -
+2026-04-22 22:37:43,813 - INFO - 127.0.0.1 - - [22/Apr/2026 22:37:43] "GET /static/style.css HTTP/1.1" 200 -
+2026-04-22 22:37:43,861 - INFO - 127.0.0.1 - - [22/Apr/2026 22:37:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-22 22:37:57,230 - WARNING - Unsafe input detected: How to hack a system - Reason: Contains unsafe keyword: hack
+2026-04-22 22:37:57,230 - INFO - 127.0.0.1 - - [22/Apr/2026 22:37:57] "POST / HTTP/1.1" 200 -
+2026-04-22 22:37:57,253 - INFO - 127.0.0.1 - - [22/Apr/2026 22:37:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-22 22:38:20,070 - WARNING - Unsafe input detected: How to hack a system - Reason: Contains unsafe keyword: hack
+2026-04-22 22:38:20,074 - INFO - 127.0.0.1 - - [22/Apr/2026 22:38:20] "POST / HTTP/1.1" 200 -
+2026-04-22 22:38:20,102 - INFO - 127.0.0.1 - - [22/Apr/2026 22:38:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-22 22:39:03,584 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-22 22:39:03,584 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 22:39:03,584 - INFO -  * Restarting with stat
+2026-04-22 22:39:05,255 - WARNING -  * Debugger is active!
+2026-04-22 22:39:05,260 - INFO -  * Debugger PIN: 137-247-229
+2026-04-22 22:39:20,735 - INFO - 127.0.0.1 - - [22/Apr/2026 22:39:20] "GET / HTTP/1.1" 200 -
+2026-04-22 22:39:20,759 - INFO - 127.0.0.1 - - [22/Apr/2026 22:39:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-22 22:39:25,852 - WARNING - Unsafe input detected: How to hack a systemI 
+ - Reason: Contains unsafe keyword: hack
+2026-04-22 22:39:25,855 - INFO - 127.0.0.1 - - [22/Apr/2026 22:39:25] "POST / HTTP/1.1" 200 -
+2026-04-22 22:39:25,884 - INFO - 127.0.0.1 - - [22/Apr/2026 22:39:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-22 22:39:33,401 - WARNING - Unsafe input detected: How to hack a systemI 
+ - Reason: Contains unsafe keyword: hack
+2026-04-22 22:39:33,405 - INFO - 127.0.0.1 - - [22/Apr/2026 22:39:33] "POST / HTTP/1.1" 200 -
+2026-04-22 22:39:33,425 - INFO - 127.0.0.1 - - [22/Apr/2026 22:39:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-22 22:39:45,631 - INFO - 127.0.0.1 - - [22/Apr/2026 22:39:45] "POST / HTTP/1.1" 200 -
+2026-04-22 22:39:45,662 - INFO - 127.0.0.1 - - [22/Apr/2026 22:39:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-22 22:40:18,942 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-22 22:40:18,942 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 22:40:18,947 - INFO -  * Restarting with stat
+2026-04-22 22:40:20,970 - WARNING -  * Debugger is active!
+2026-04-22 22:40:20,977 - INFO -  * Debugger PIN: 137-247-229
