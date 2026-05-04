@@ -1,26 +1,26 @@
-# Guardrail System for LLM Applications
+# Guardrail-System-for-LLM-Applications
 
 ## 📌 Overview
 
-This project implements a basic AI safety layer (guardrail system) for Large Language Models (LLMs). It focuses on preventing unsafe or malicious inputs from reaching the model and filtering unsafe outputs.
+This project is a foundational AI safety system that introduces the concept of guardrails for Large Language Models (LLMs). It focuses on controlling unsafe inputs and outputs using rule-based filtering techniques.
 
-The system demonstrates how to build a controlled AI interaction pipeline using rule-based filtering techniques.
+This project serves as the **baseline version**, highlighting both the strengths and limitations of traditional guardrail systems.
 
 ---
 
 ## 🎯 Features
 
-* Input guardrails (keyword-based filtering)
-* Output guardrails (response validation)
-* Prompt injection detection (basic patterns)
-* Flask-based backend API
-* Local or API-based LLM integration
+* Keyword-based input filtering
+* Basic prompt injection detection
+* Output validation layer
+* Flask-based API system
+* LLM integration (API or local)
 
 ---
 
 ## 🧠 Architecture
 
-User Input → Input Filter → LLM → Output Filter → Response
+User Input → Input Guardrail → LLM → Output Guardrail → Response
 
 ---
 
@@ -29,19 +29,7 @@ User Input → Input Filter → LLM → Output Filter → Response
 * Python
 * Flask
 * Rule-based filtering
-* LLM (API or local via Ollama)
-
----
-
-## 🚀 How to Run
-
-```bash
-pip install -r requirements.txt
-python app.py
-```
-
-Open:
-http://127.0.0.1:5000
+* LLM (API / local via Ollama)
 
 ---
 
@@ -59,19 +47,53 @@ Explain AI
 
 ---
 
-## ⚠️ Limitations
+## ⚠️ Limitations (Addressed in SafePrompt v2)
 
-* Relies on keyword-based filtering
-* Cannot detect semantic variations of unsafe prompts
-* Vulnerable to paraphrased attacks
-* Limited adaptability
+### 1. Keyword-Based Detection Only
+
+* This system relies on exact keyword matching.
+* ❌ Easily bypassed using paraphrased inputs.
+
+👉 In **SafePrompt v2**, this is solved using **semantic similarity (embedding-based detection)**.
+
+---
+
+### 2. Weak Against Adversarial Prompts
+
+* Indirect or disguised malicious intent is not detected.
+
+👉 In **SafePrompt v2**, intent is analyzed using **semantic filtering**, making it robust against adversarial phrasing.
+
+---
+
+### 3. No Deep Understanding of Context
+
+* Cannot differentiate between safe and unsafe variations of similar queries.
+
+👉 In **SafePrompt v2**, contextual similarity improves decision-making.
+
+---
+
+### 4. Limited Real-World Robustness
+
+* Not suitable for production-level safety systems.
+
+👉 In **SafePrompt v2**, the architecture is redesigned with **layered and modular safety logic**.
 
 ---
 
 ## 📚 Learning Outcome
 
-* Understanding guardrails
+* Fundamentals of AI guardrails
 * Prompt injection basics
-* Layered AI safety approach
+* Rule-based safety systems
 
 ---
+
+## 🔄 Evolution
+
+This project directly led to the development of:
+
+➡️ **SafePrompt v2: Semantic AI Safety Gateway**
+
+which addresses its core limitations using semantic intelligence and improved architecture.
