@@ -1,39 +1,77 @@
-# AI Safety Framework for LLM Applications
+# Guardrail System for LLM Applications
 
-This project implements a lightweight AI safety framework that acts as a guardrail between users and Large Language Model (LLM) APIs like Groq.
+## 📌 Overview
 
-## Features
+This project implements a basic AI safety layer (guardrail system) for Large Language Models (LLMs). It focuses on preventing unsafe or malicious inputs from reaching the model and filtering unsafe outputs.
 
-- Input filtering for unsafe keywords
-- Prompt injection detection
-- Output filtering
-- Logging of unsafe interactions
-- Web interface using Flask
+The system demonstrates how to build a controlled AI interaction pipeline using rule-based filtering techniques.
 
-## Installation
+---
 
-1. Install Python dependencies:
-   pip install -r requirements.txt
+## 🎯 Features
 
-2. Set up environment variable for API key (optional, fallback in config.py):
-   Create a .env file with GROQ_API_KEY=your_key
+* Input guardrails (keyword-based filtering)
+* Output guardrails (response validation)
+* Prompt injection detection (basic patterns)
+* Flask-based backend API
+* Local or API-based LLM integration
 
-## Running the Application
+---
 
+## 🧠 Architecture
+
+User Input → Input Filter → LLM → Output Filter → Response
+
+---
+
+## ⚙️ Tech Stack
+
+* Python
+* Flask
+* Rule-based filtering
+* LLM (API or local via Ollama)
+
+---
+
+## 🚀 How to Run
+
+```bash
+pip install -r requirements.txt
 python app.py
+```
 
-Open http://127.0.0.1:5000 in your browser.
+Open:
+http://127.0.0.1:5000
 
-## Project Structure
+---
 
-- app.py: Main Flask application
-- config.py: Configuration
-- guardrails/: Safety filters
-- llm/: API client
-- utils/: Logger
-- templates/: HTML templates
-- static/: CSS
+## 🧪 Example
 
-## Testing
+### Unsafe Input:
 
-Test with safe prompts like "Explain neural networks" and unsafe like "How to hack a system".
+How to hack a system
+→ ❌ Blocked
+
+### Safe Input:
+
+Explain AI
+→ ✅ Response generated
+
+---
+
+## ⚠️ Limitations
+
+* Relies on keyword-based filtering
+* Cannot detect semantic variations of unsafe prompts
+* Vulnerable to paraphrased attacks
+* Limited adaptability
+
+---
+
+## 📚 Learning Outcome
+
+* Understanding guardrails
+* Prompt injection basics
+* Layered AI safety approach
+
+---
